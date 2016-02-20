@@ -1,0 +1,709 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--title-->
+    <title>Basin Noodle House</title>   
+
+    <style>
+        #map {
+            width: 1920px;
+            height: 574px;
+        }
+        .space-2{
+            height: 150px;
+        }
+        .space-3{
+            height: 100px;
+        }
+    </style>
+
+<script src="~/Scripts/jquery-1.12.0.js"></script>
+    
+</head>
+<body>
+    <!--Page Content Start-->
+    <div id="bg-slider-section">
+        <div id="slider-section">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="main-slider">
+                    <div class="slider-content text-center">
+                        <div class="slider-logo">
+                            <img class="img-responsive" src="~/Content/images/slider-logo.png" alt="" />
+                        </div>
+                        <h1><span class="pacifico">Welcome To</span> Basin Noodle<span class="bold">HOUSE</span></h1>
+                        <h2>Best Food, Good Food</h2>
+                        <!--Link to Book Table-->
+                    </div>
+                </div>
+            </div>
+            @*<div id="video_background_video_0" style="z-index: -1;position: absolute;top: 0px; left: 0px; right: 0px; bottom: 0px;overflow: hidden;">
+                <video width="1349" height="759" autoplay loop style="position: absolute;top: -4px; left: 0px;" muted>
+                    <source src="~/Video/Chinese_Noodles_Indo_Chinese_Recipe_Video_www_.mp4" type="video/mp4" />
+
+                </video>
+            </div>*@
+            
+           
+            <div class="fader">
+                <img src="~/Content/images/slider/132494F4020b0-224Q.jpg" />
+                <img src="~/Content/images/slider/13261551S21N0-12J5.jpg" />
+                <img src="~/Content/images/slider/132615515Y5c0-1P58.jpg" />
+                <img src="~/Content/images/slider/132615501QE40-2A60.jpg" />
+            </div>
+            
+        </div>
+    </div><!--/#bg-video-section-->
+
+    <div id="special-items">
+        <div class="container">
+            <div class="text-center padding">
+                <div class="row section-title">
+                    <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                        <h1>Our Speciality</h1>
+                    </div>
+                </div>
+                <div class="row special-items">
+                    <div class="col-sm-4">
+                        <div class="special-item">
+                            <div class="special-item-image">
+                                <img class="img-responsive" src="~/Content/images/sp-item1.jpg" alt=""/>
+                                <img class="img-responsive" src="~/Content/images/sp-item3.jpg" alt=""/>
+                            </div>
+                            <h2>Serving With Love</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="special-item">
+                            <div class="special-item-image">
+                                <img class="img-responsive" src="~/Content/images/sp-item2.jpg" alt="" />
+                                <img class="img-responsive" src="~/Content/images/sp-item1.jpg" alt="" />
+                            </div>                          
+                        </div>
+                        <h2>Tasty Products</h2>
+                        <p>It's really nice and yummy. Please come here and try them!</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="special-item">
+                            <div class="special-item-image">
+                                <img class="img-responsive" src="~/Content/images/sp-item3.jpg" alt="" />
+                                <img class="img-responsive" src="~/Content/images/sp-item1.jpg" alt="" />
+                            </div>                           
+                        </div>
+                        <h2>Wide Range Flavors</h2>
+                        <p>It's a wide range of flavors in our shop. Please come here to try them.</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </div><!--/#special-items-->  
+
+    <div id="our-products" class="parallax-section" style="background-image:url(/Content/images/others/FoodWeServe.jpg)">
+        <div class="overlay-bg"></div>
+        <div class="padding text-center">
+            <div class="container">
+                <div class="row section-title">
+                    <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                        <h1>Food We Serve</h1>                      
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="our-product">
+                            <img class="img-responsive" src="~/Content/images/others/chinese_Noodle.png" alt="" />
+                            <a href="#NoodleSection"><h2>Noodle</h2></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="our-product">
+                            <img class="img-responsive" src="~/Content/images/others/Burger.png" alt="" />
+                            <h2>Burger</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="our-product">
+                            <img class="img-responsive" src="~/Content/images/item3.png" alt="" />
+                            <h2>Chinese Meals</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="our-product">
+                            <img class="img-responsive" src="~/Content/images/item2.png" alt="" />
+                            <h2>Large Meal</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/#our-products-->
+
+    <div id="weekly-promo">
+        <div class="text-center">
+            <div class="container">
+                <div class="promo-slider">
+                    <div class="slide">
+                        <div class="row">
+                            <div class="promo-info col-sm-6">
+                                <div class="section-title">
+                                    <h1><span>Best Selling of the Week</span>Fried Dumpling</h1>
+                                </div>
+                                <div class="weekly-promo">
+                                    <h4>I love it</h4>
+                                    <p>I like it</p>
+                                </div>
+                            </div>
+                            <div class="promo-image col-sm-6">
+                                <img class="img-responsive" src="~/Content/images/menu/IMG_2338_Resize.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="row">
+                            <div class="promo-info col-sm-6">
+                                <div class="section-title">
+                                    <h1><span>Best Selling of the Week</span>Pork Ribs Noodle Soup</h1>
+                                </div>
+                                <div class="weekly-promo">
+                                    <h4>I love it</h4>
+                                    <p>I like it</p>
+                                </div>
+                            </div>
+                            <div class="promo-image col-sm-6">
+                                <img class="img-responsive" src="~/Content/images/menu/IMG_2304_Resize.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="row">
+                            <div class="promo-info col-sm-6">
+                                <div class="section-title">
+                                    <h1><span>Best Selling of the Week</span>Spiced Spring Chicken in Chili</h1>
+                                </div>
+                                <div class="weekly-promo">
+                                    <h4>I love it</h4>
+                                    <p>I like it</p>
+                                </div>
+                            </div>
+                            <div class="promo-image col-sm-6">
+                                <img class="img-responsive" src="~/Content/images/menu/IMG_2308_Resize.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/#weekly-promo-->
+
+    <div id="promo-offer" class="parallax-section">
+        <div class="overlay-bg"></div>
+        <div class="padding">
+            <div class="container">
+                <div class="col-sm-6">
+                    <div class="promo-offer-content">
+                        <img class="img-responsive" src="~/Content/images/slider-logo.png" alt=""/>
+                        <span class="light">Online Order</span>
+                        <h1><span class="bold">Coming Soon!</span></h1>
+                        <p><i class="fa fa-clock-o"></i> 30 Min for Delevery</p>
+                        <p><i class="fa fa-map-marker"></i> Wellington CBD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="promo-offer-image">
+                        <img class="img-responsive" src="~/Content/images/others/promo-offer.png" alt=""/>
+                    </div>
+                </div>               
+            </div>
+            
+        </div>
+    </div><!--/#promo-offer-->
+
+    <div id="our-menu">
+        <div class="container text-center">
+            <div class="row section-title">
+                <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                    <h1>Our Menu</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center panel-group" id="menu-accordion" role="tablist" aria-multiselectable="true">
+            <!---Noodle and Snack-->
+            <div class="panel panel-default">
+                <div class="accordion-heading active" role="tab">
+                    <h1>
+                        <a data-toggle="collapse" data-parent="#menu-accordion" href="#noodleAndsnack" id="NoodleSection">Noodles & Snacks</a>
+                    </h1>
+                </div>
+                <div id="noodleAndsnack" class="panel-collapse collapse in">
+                    <div class="container panel-body">
+                        <div class="row menu-info">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                                <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellen eiusmod tempor incididunt</p>
+                            </div>
+                        </div>
+                        <div class="menu-items">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2544_ Fried Dumplings.jpg" alt="" />
+                                        <h2>Fried Dumpling</h2>
+                                        <span>$18</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2400_Pork Bun.jpg" alt="" />
+                                        <h2>Pork Bun</h2>
+                                        <span>$5</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2485_Won Ton Soup.jpg" alt="" />
+                                        <h2>Won Ton Noodle Soup</h2>
+                                        <span>$12.9</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2428_Curry Laksa.jpg" alt="" />
+                                        <h2>Curry Laksa</h2>
+                                        <span>$18</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="/MenuView/Index">Get More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            <!--Burger and Chip-->
+            <div class="panel panel-default">
+                <div class="accordion-heading" role="tab">
+                    <h1>
+                        <a data-toggle="collapse" data-parent="#menu-accordion" href="#BurgersAndChips">Burgers & Chips</a>
+                    </h1>
+                </div>
+                <div id="BurgersAndChips" class="panel-collapse collapse">
+                    <div class="container panel-body">
+                        <div class="row menu-info">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                                <p>Praesent sapien massa, convallis a pellen eiusmod tempor incididunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                            </div>
+                        </div>
+                        <div class="menu-items">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0390_Chicken Burger.jpg" alt="" />
+                                        <h2>Chicken Burger</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0391_Hot Dog CB.jpg" alt="" />
+                                        <h2>Hot Dog CB</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2412_Cheese Buger CB.jpg" alt="" />
+                                        <h2>Cheese Burger CB</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Chinese Meal-->>
+            <div class="panel panel-default">
+                <div class="accordion-heading" role="tab">
+                    <h1>
+                        <a data-toggle="collapse" data-parent="#menu-accordion" href="#ChineseMeal">Chinese Meal</a>
+                    </h1>
+                </div>
+                <div id="ChineseMeal" class="panel-collapse collapse">
+                    <div class="container panel-body">
+                        <div class="row menu-info">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                                <p>Praesent sapien massa, convallis a pellen eiusmod tempor incididunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                            </div>
+                        </div>
+                        <div class="menu-items">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2313_Spiced Spring Chicked in Chili.jpg" alt="" />
+                                        <h2>Spiced Spring Chicked in Chili</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2322_Sweet Sour Pork.jpg" alt="" />
+                                        <h2>Sweet Sour Pork</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2420_Satay Chicken.jpg" alt="" />
+                                        <h2>Satay Chicken</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2488_Stir Fried Potato Chips.jpg" alt="" />
+                                        <h2>Stir Fried Potato Chips</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2491_Spareribs With Brown Sauce.jpg" alt="" />
+                                        <h2>Spareribs With Brown Sauce</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2493_Fried Bok Choi With Chicken.jpg" alt="" />
+                                        <h2>Fried Bok Choi With Chicken</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0288 Salt Pepper Squid.jpg" alt="" />
+                                        <h2>Salt Pepper Squid</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0302_Crispy Skin Chicken.jpg" alt="" />
+                                        <h2>Crispy Skin Chicken</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0330_Nonya Chicken.jpg" alt="" />
+                                        <h2>Nonya Chicken</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0350 Salt Pepper Prawns.jpg" alt="" />
+                                        <h2>Salt Pepper Prawns</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0359_Belly Pork With Chili Sauce.jpg" alt="" />
+                                        <h2>Belly Pork With Chili Sauce</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0386_Bean Curd Sichuan Style.jpg" alt="" />
+                                        <h2>Bean Curd Sichuan Style</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0397_ Hot Spicy Bean Curd.jpg" alt="" />
+                                        <h2>Hot Spicy Bean Curd</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0398_Sauteed Slice Beef Onion Ginger.jpg" alt="" />
+                                        <h2>Sauteed Slice Beef Onion</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0402_Spicy Pork With Dried Beans.jpg" alt="" />
+                                        <h2>Spicy Pork With Dried Beans</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0409_Salt Pepper Pork.jpg" alt="" />
+                                        <h2>Salt Pepper Pork</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0436_Sambal Squids.jpg" alt="" />
+                                        <h2>Sambal Squids</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0384_YangZhou Fried Rice.jpg" alt="" />
+                                        <h2>YangZhou Fried Rice</h2>
+                                        <span>$12</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---Large Meal-->>
+            <div class="panel panel-default">
+                <div class="accordion-heading active" role="tab">
+                    <h1>
+                        <a data-toggle="collapse" data-parent="#menu-accordion" href="#LargeMeal">Large Meal</a>
+                    </h1>
+                </div>
+                <div id="LargeMeal" class="panel-collapse collapse">
+                    <div class="container panel-body">
+                        <div class="row menu-info">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                                <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellen eiusmod tempor incididunt</p>
+                            </div>
+                        </div>
+                        <div class="menu-items">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/IMG_2315_Roti Beef.jpg" alt="" />
+                                        <h2>Roti Beef</h2>
+                                        <span>$18</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0295_Roti Chicken.jpg" alt="" />
+                                        <h2>Roti Chicken</h2>
+                                        <span>$18</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0307_Fried Ribs.jpg" alt="" />
+                                        <h2>Fried Ribs</h2>
+                                        <span>$18</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="item text-center">
+                                        <img class="img-responsive" src="~/Content/images/menu/DSC_0362_ Beef Steak.jpg" alt="" />
+                                        <h2>Beef Steak</h2>
+                                        <span>$18</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--space-->
+    <div class="space-2"></div>
+
+
+    <div id="comments" class="parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="comment">
+                        <img class="img-responsive" src="~/Content/images/others/quote.png" alt="" />
+                        <h2>Our Long History</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <h4>Tanya Blazelist, <span>Master Chef</span></h4>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="commenter text-center">
+                        <img class="img-responsive" src="~/Content/images/others/commentor.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/#History-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="padding contact-content">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="contact-info">
+                            <img class="img-responsive footer-logo" src="~/Content/images/others/footer-logo.png" alt="" />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                            <ul class="address">
+                                <li><i class="fa fa-map-marker"></i>20 Adelaide Road, Mt Cook, Wellington City</li>
+                                <li><i class="fa fa-phone"></i>+64 4 385 9375</li>
+                                <li><i class="fa fa-envelope"></i>dufang6565@gmail.com</li>
+                            </ul>
+                            <ul class="list-inline social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-info date">
+                            <img class="img-responsive" src="~/Content/images/others/clock.png" alt="" />
+                            <h2>Working Hours</h2>
+                            <ul>
+                                <li>Monday ................................ 11 am - 8.30 pm</li>
+                                <li>Tuesday ............................. 11 am - 8.30 pm</li>
+                                <li>Wednesday ....................... 11 am - 8.30 pm</li>
+                                <li>Thursday ............................ 11 am - 8.30 pm</li>
+                                <li>Friday ................................. 11 am - 8.30 pm</li>
+                                <li>Saturday ............................ 11 am - 8.30 pm </li>
+                                <li>Sunday ................................. Closed</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-info">
+                            <img class="img-responsive" src="~/Content/images/others/calender.png" alt="" />
+                            <h2>Upcomming Events</h2>
+                            <div class="event">
+                                <div class="event-date">
+                                    <p><span>3</span> may</p>
+                                </div>
+                                <div class="event-info">
+                                    <h4>BARBEQUE WHOLE DAY</h4>
+                                    <p>(All Day) Le Park Monre</p>
+                                </div>
+                            </div>
+                            <div class="event">
+                                <div class="event-date">
+                                    <p><span>9</span> may</p>
+                                </div>
+                                <div class="event-info">
+                                    <h4>BARBEQUE WHOLE DAY</h4>
+                                    <p>(All Day) Le Park Monre</p>
+                                </div>
+                            </div>
+                            <div class="event">
+                                <div class="event-date">
+                                    <p><span>15</span> may</p>
+                                </div>
+                                <div class="event-info">
+                                    <h4>BARBEQUE WHOLE DAY</h4>
+                                    <p>(All Day) Le Park Monre</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/#contact-->
+
+    <footer>
+        <div id="map">
+        </div><!--/#gmap-->
+        <div id="footer-bottom">
+            <div class="container text-center">
+                <p>© Copyright 2016 <a href="#">Basin Noodle House</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            var $imgs = $(".fader").find("img");
+            var i = 0;
+
+            function changeImage() {
+                var next = (++i % $imgs.length);
+                $($imgs.get(next - 1)).fadeOut(1000);
+                $($imgs.get(next)).fadeIn(1000);
+            }
+            var interval = setInterval(changeImage, 8000);
+        });
+     
+
+    function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var myLatLng = { lat: -41.30199683, lng: 174.77947578 };
+        var mapOptions = {
+            center: myLatLng,
+            zoom: 18,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: "Basin Noodle House"
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+ 
+</body>
+</html>

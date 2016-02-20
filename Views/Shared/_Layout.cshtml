@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="~/Content/themes/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/themes/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/themes/animation.css" rel="stylesheet" />
+    <link href="~/Content/themes/magnific-popup.css" rel="stylesheet" />
+    <link href="~/Content/themes/date-picker.css" rel="stylesheet" />
+    <link href="~/Content/themes/bxslider.css" rel="stylesheet" />
+    <link href="~/Content/themes/vegas.min.css" rel="stylesheet" />
+    <link href="~/Content/themes/main.css" rel="stylesheet" />
+    <link href="~/Content/themes/responsive.css" rel="stylesheet" />
+
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800,100,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="~/Content/themes/base/images/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/Content/images/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/Content/images/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/Content/images/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="~/Content/images/apple-touch-icon-57-precomposed.png" />
+
+    <script type="text/javascript" src="~/Scripts/JS/jquery.js"></script>
+    <script type="text/javascript" src="~/Scripts/JS/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="~/Scripts/JS/gmaps.js"></script>
+    <script type="text/javascript" src="~/Scripts/JS/jquery.parallax.js"></script>
+    <script type="text/javascript" src="~/Scripts/JS/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/JS/vegas.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/JS/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/JS/main.js"></script>
+
+    <style>
+        .space-1
+        {
+            height:80px;
+            width:1349px;
+        }
+    </style>
+</head>
+<body>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
